@@ -1,0 +1,393 @@
+Hitachi Optimizing Linkage Editor (Ver. 7.1.03.000)06-Aug-2012 11:55:41
+
+*** Options ***
+
+-subcommand=C:\Users\Timo\AppData\Local\Temp\hmkC34F.tmp
+noprelink
+sdebug
+rom D=R
+nomessage
+list "G:\Casio SDK\Projekte\Snake\Debug\FXADDINror.map"
+show symbol
+nooptimize
+start P_TOP,P,C,D,C$VTBL,C$INIT/0300200,B_BR_Size,B,R/08100000
+fsymbol P
+nologo
+input "G:\Casio SDK\Projekte\Snake\Debug\Snake.obj"
+input "G:\Casio SDK\OS\FX\lib\setup.obj"
+library "G:\Casio SDK\OS\FX\lib\fx9860G_library.lib"
+library "G:\Casio SDK\OS\FX\lib\revolution.lib"
+output "G:\Casio SDK\Projekte\Snake\Debug\FXADDINror.abs"
+-nomessage=1100
+end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+P_TOP
+                                  00300200  0030020b         c   4
+P
+                                  0030020c  003010fb       ef0   4
+C
+                                  003010fc  003011bf        c4   4
+D
+                                  003011c0  003011db        1c   4
+B_BR_Size
+                                  08100000  08100003         4   4
+B
+                                  08100004  08100007         4   4
+R
+                                  08100008  08100023        1c   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=P_TOP
+FILE=G:\Casio SDK\Projekte\Snake\Debug\Snake.obj
+                                  00300200  0030020b         c
+  _InitializeSystem
+                                  00300200         c   func ,g         * 
+
+SECTION=P
+FILE=G:\Casio SDK\Projekte\Snake\Debug\Snake.obj
+                                  0030020c  003007ef       5e4
+  _PRGM_GetKey
+                                  0030020c        32   func ,g         * 
+  _rand
+                                  0030023e        1a   func ,g         * 
+  _AddIn_main
+                                  00300258       598   func ,g         * 
+FILE=G:\Casio SDK\OS\FX\lib\setup.obj
+                                  003007f0  0030090b       11c
+  ___LINK_PROTECT
+                                  003007f0         4   func ,g         * 
+  _SetQuitHandler
+                                  003007f4         6   func ,g         * 
+  _OnAppCloseDefault
+                                  003007fa        54   func ,g         * 
+  __INITSCT_ADDIN
+                                  0030084e        48   func ,g         * 
+  _INIT_ADDIN_APPLICATION
+                                  00300896        76   func ,g         * 
+FILE=__modlu
+                                  0030090c  003009c3        b8
+  __modlu
+                                  0030090c         0   none ,g         * 
+  modlu_L
+                                  003009a4         0   none ,l         * 
+  modlu_zero
+                                  003009ac         0   none ,l         * 
+  A_errno
+                                  003009bc         0   none ,l         * 
+  n_zerono
+                                  003009c0         0   none ,l         * 
+FILE=_Bdel_cychdr
+                                  003009c4  003009d3        10
+  _Bdel_cychdr
+                                  003009c4         0   none ,g         * 
+FILE=_Bdisp_AllClr_DDVRAM
+                                  003009d4  003009e3        10
+  _Bdisp_AllClr_DDVRAM
+                                  003009d4         0   none ,g         * 
+FILE=_Bdisp_ClearLineVRAM
+                                  003009e4  003009f3        10
+  _Bdisp_ClearLineVRAM
+                                  003009e4         0   none ,g         * 
+FILE=_Bdisp_PutDisp_DD
+                                  003009f4  00300a03        10
+  _Bdisp_PutDisp_DD
+                                  003009f4         0   none ,g         * 
+FILE=_Bdisp_PutLineVRAM
+                                  00300a04  00300a13        10
+  _Bdisp_DrawLineVRAM
+                                  00300a04         0   none ,g         * 
+FILE=_BfileFLS_CloseFile
+                                  00300a14  00300a23        10
+  _BfileFLS_CloseFile
+                                  00300a14         0   none ,g         * 
+FILE=_Bkey_Set_RepeatTime_Default
+                                  00300a24  00300a33        10
+  _Bkey_Set_RepeatTime_Default
+                                  00300a24         0   none ,g         * 
+FILE=_CallbackAtQuitMainFunction
+                                  00300a34  00300a43        10
+  _CallbackAtQuitMainFunction
+                                  00300a34         0   none ,g         * 
+FILE=_flsFindClose
+                                  00300a44  00300a53        10
+  _flsFindClose
+                                  00300a44         0   none ,g         * 
+FILE=_GLibAddinAplExecutionCheck
+                                  00300a54  00300a63        10
+  _GLibAddinAplExecutionCheck
+                                  00300a54         0   none ,g         * 
+FILE=_Hmem_SetMMU
+                                  00300a64  00300a73        10
+  _Hmem_SetMMU
+                                  00300a64         0   none ,g         * 
+FILE=_Print
+                                  00300a74  00300a83        10
+  _Print
+                                  00300a74         0   none ,g         * 
+FILE=dispbios
+                                  00300a84  00300bf9       176
+  _PrintMini
+                                  00300a84        1c   func ,g         * 
+  _locate
+                                  00300aa0        28   func ,g         * 
+  _Bdisp_ReadArea_DD
+                                  00300ac8       132   func ,g         * 
+FILE=timer
+                                  00300bfc  00300cfb       100
+  _GetSDKLibraryVersion
+                                  00300bfc         6   func ,g         * 
+  _SetTimer
+                                  00300c02        54   func ,g         * 
+  _KillTimer
+                                  00300c56        44   func ,g         * 
+  _Sleep
+                                  00300c9a        62   func ,g         * 
+FILE=revolution_asm
+                                  00300cfc  00300f0d       212
+  _CopyVRAM
+                                  00300cfc         0   none ,g         * 
+  CopyByte
+                                  00300d0c         0   none ,l         * 
+  _DrawAll
+                                  00300d30         0   none ,g         * 
+  SelectLine
+                                  00300d4e         0   none ,l         * 
+  WriteLine
+                                  00300d60         0   none ,l         * 
+  _Change_Contrast
+                                  00300d88         0   none ,g         * 
+  _Reset_Calc
+                                  00300da0         0   none ,g         * 
+  _Setup_Serial
+                                  00300dac         0   none ,g         * 
+  _FastKeyDown
+                                  00300dd4         0   none ,g         * 
+  CodeCheck
+                                  00300e0c         0   none ,l         * 
+  PortCheck
+                                  00300e10         0   none ,l         * 
+  CheckFlag
+                                  00300e40         0   none ,l         * 
+  KeyFinish
+                                  00300e46         0   none ,l         * 
+  KeyExit
+                                  00300e5c         0   none ,l         * 
+  KeyDatMov
+                                  00300e74         0   none ,l         * 
+  KeyDatLoop
+                                  00300e82         0   none ,l         * 
+  KeyDatFin
+                                  00300ea4         0   none ,l         * 
+  KeyHelp
+                                  00300eac         0   none ,l         * 
+  KeyAssist
+                                  00300eb0         0   none ,l         * 
+  KeyDataSt
+                                  00300eb4         0   none ,l         * 
+  _FastGetKey
+                                  00300ec4         0   none ,g         * 
+  StartLoop
+                                  00300edc         0   none ,l         * 
+  CheckKey
+                                  00300ee0         0   none ,l         * 
+  LoopIncrement
+                                  00300eec         0   none ,l         * 
+  LoopCheck
+                                  00300ef8         0   none ,l         * 
+  FastGetKeyExit
+                                  00300efe         0   none ,l         * 
+FILE=__divls
+                                  00300f10  00300fc3        b4
+  __divls
+                                  00300f10         0   none ,g         * 
+  divls_zero
+                                  00300fae         0   none ,l         * 
+  A_errno
+                                  00300fbc         0   none ,l         * 
+  n_zerono
+                                  00300fc0         0   none ,l         * 
+FILE=__modls
+                                  00300fc4  0030108b        c8
+  __modls
+                                  00300fc4         0   none ,g         * 
+  modls_L
+                                  0030106a         0   none ,l         * 
+  modls_zero
+                                  00301076         0   none ,l         * 
+  A_errno
+                                  00301084         0   none ,l         * 
+  n_zerono
+                                  00301088         0   none ,l         * 
+FILE=_Bcre_cychdr
+                                  0030108c  0030109b        10
+  _Bcre_cychdr
+                                  0030108c         0   none ,g         * 
+FILE=_BSrl_DummyWAIT
+                                  0030109c  003010ab        10
+  _BSrl_DummyWAIT
+                                  0030109c         0   none ,g         * 
+FILE=_Bsta_cychdr
+                                  003010ac  003010bb        10
+  _Bsta_cychdr
+                                  003010ac         0   none ,g         * 
+FILE=_Bstp_cychdr
+                                  003010bc  003010cb        10
+  _Bstp_cychdr
+                                  003010bc         0   none ,g         * 
+FILE=_DD_GET
+                                  003010cc  003010db        10
+  _DD_GET
+                                  003010cc         0   none ,g         * 
+FILE=_locate
+                                  003010dc  003010eb        10
+  _locate_OS
+                                  003010dc         0   none ,g         * 
+FILE=_PrintMiniSd
+                                  003010ec  003010fb        10
+  _PrintMiniSd
+                                  003010ec         0   none ,g         * 
+
+SECTION=C
+FILE=G:\Casio SDK\Projekte\Snake\Debug\Snake.obj
+                                  003010fc  003011a9        ae
+  _sc06C4
+                                  003010fc        10   data ,g         * 
+  _sc003B
+                                  0030110c        10   data ,g         * 
+  _sc0541
+                                  0030111c        10   data ,g         * 
+FILE=addin_sct
+                                  003011ac  003011bf        14
+  _B_BGN
+                                  003011ac         0   none ,g         * 
+  _B_END
+                                  003011b0         0   none ,g         * 
+  _R_BGN
+                                  003011b4         0   none ,g         * 
+  _R_END
+                                  003011b8         0   none ,g         * 
+  _D_ROM
+                                  003011bc         0   none ,g         * 
+
+SECTION=B_BR_Size
+FILE=G:\Casio SDK\Projekte\Snake\Debug\Snake.obj
+                                  08100000  08100003         4
+  _BR_Size
+                                  08100000         4   data ,g         * 
+
+SECTION=B
+FILE=_errno
+                                  08100004  08100007         4
+  __errno
+                                  08100004         4   data ,g         * 
+
+SECTION=R
+FILE=G:\Casio SDK\Projekte\Snake\Debug\Snake.obj
+                                  08100008  0810001f        18
+  _SysCallCode
+                                  08100008         c   data ,g         * 
+  _SysCall
+                                  08100014         4   data ,g         * 
+  _headloop
+                                  08100018         4   data ,g         * 
+  _lastrandom
+                                  0810001c         4   data ,l         * 
+FILE=G:\Casio SDK\OS\FX\lib\setup.obj
+                                  08100020  08100023         4
+  _gb_OnAppClose
+                                  08100020         4   data ,g         * 
+
+Absolute value symbols
+FILE=__modlu
+  zerodiv
+                                  0000044e         0   none ,l         * 
+FILE=_Bdel_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bdisp_AllClr_DDVRAM
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bdisp_ClearLineVRAM
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bdisp_PutDisp_DD
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bdisp_PutLineVRAM
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_BfileFLS_CloseFile
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bkey_Set_RepeatTime_Default
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_CallbackAtQuitMainFunction
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_flsFindClose
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_GLibAddinAplExecutionCheck
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Hmem_SetMMU
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Print
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=__divls
+  zerodiv
+                                  0000044e         0   none ,l         * 
+FILE=__modls
+  zerodiv
+                                  0000044e         0   none ,l         * 
+FILE=_Bcre_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_BSrl_DummyWAIT
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bsta_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bstp_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_DD_GET
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_locate
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_PrintMiniSd
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Accessible with Abs8 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Variable Accessible with Abs16 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Function Call ***
+
+SYMBOL                              COUNTS  OPTIMIZE
